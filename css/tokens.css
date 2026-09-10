@@ -1,0 +1,77 @@
+/* ============================================================
+   EXIT — 디자인 토큰 (색상 / 타이포 / 간격 / 모션)
+   색을 바꾸고 싶으면 이 파일의 변수 값만 수정하면 됩니다.
+   ============================================================ */
+
+:root {
+  /* --- 배경 (딥 네이비 ~ 블랙) --- */
+  --bg-900: #070b14;        /* 가장 어두운 배경 */
+  --bg-800: #0b1120;        /* 기본 배경 */
+  --bg-700: #111a2e;        /* 섹션 구분 배경 */
+  --surface: #131d33;       /* 카드 표면 */
+  --surface-2: #1a2640;     /* 카드 hover / 강조 표면 */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* --- 텍스트 --- */
+  --text-100: #f4f7fb;      /* 헤드라인 */
+  --text-200: #c3ccdb;      /* 본문 */
+  --text-300: #8b97ad;      /* 보조 텍스트 */
+  --text-400: #5e6b82;      /* 가장 흐린 텍스트 */
+
+  /* --- 포인트 컬러: 에메랄드 그린 --- */
+  --accent: #2fe6a8;
+  --accent-bright: #5cffc4;
+  --accent-dim: #1ba07a;
+  --accent-soft: rgba(47, 230, 168, 0.12);
+  --accent-glow: rgba(47, 230, 168, 0.35);
+
+  /* --- 보조 포인트 (그라데이션용) --- */
+  --blue: #3b82f6;
+  --blue-soft: rgba(59, 130, 246, 0.12);
+
+  /* --- 타이포 --- */
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", "Apple SD Gothic Neo",
+    "Malgun Gothic", sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "Fira Code", ui-monospace,
+    Menlo, monospace;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+  --text-xl: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-hero: clamp(2.1rem, 1.4rem + 3.4vw, 4.5rem);
+
+  /* --- 간격 --- */
+  --space-section: clamp(4.5rem, 3rem + 6vw, 9rem);
+  --space-gutter: clamp(1.25rem, 0.5rem + 3vw, 2.5rem);
+  --container: 1200px;
+
+  /* --- 라운드 / 그림자 --- */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --shadow-card: 0 18px 48px rgba(3, 7, 18, 0.55);
+  --shadow-glow: 0 0 0 1px var(--accent-glow), 0 16px 40px rgba(47, 230, 168, 0.12);
+
+  /* --- 모션 --- */
+  --dur-fast: 160ms;
+  --dur: 320ms;
+  --dur-slow: 640ms;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

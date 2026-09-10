@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>예측마켓 — EXIT</title>
+  <meta name="description" content="폭발적으로 성장하는 예측마켓(Prediction Market). 결과와 무관한 거래량 기반의 절대적 수익구조와 무한한 마켓을, EXIT가 귀사의 플랫폼으로 제작합니다." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="css/tokens.css?v=20260712w" />
+  <link rel="stylesheet" href="css/main.css?v=20260712w" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+  <main>
+    <!-- 히어로 (움직이는 차트 배경) -->
+    <section class="page-hero pm-hero">
+      <div class="pm-hero-bg" aria-hidden="true">
+        <div class="pm-grid"></div>
+        <canvas class="pm-hero-canvas" data-pmchart data-bg data-colors="#2fe6a8,#5aa9ff,#e8a33a"></canvas>
+        <div class="pm-hero-fade"></div>
+      </div>
+      <div class="container pm-hero-inner">
+        <div class="pm-hero-copy">
+          <p class="crumb"><a href="index.html">EXIT</a> / <a href="products.html" data-ko="제품" data-en="Products">제품</a> / <span data-ko="예측마켓" data-en="Prediction Market">예측마켓</span></p>
+          <h1 data-ko="세상의 모든 주제가<br>거래되는 시장" data-en="Where every topic<br>becomes a market">세상의 모든 주제가<br>거래되는 시장</h1>
+          <p data-ko="정치·스포츠·경제·크립토·주식<br>— 다가올 사건의 확률을 실시간으로 거래합니다.<br><br>전 세계적으로 폭발적으로 성장하는 <span class='hlw' data-ko="예측마켓" data-en="Prediction">예측마켓</span>,<br><span class='exit-mark'>E<span class='x'>X</span>IT</span>는 예측마켓의 플랫폼 · API · 자동화 시스템 등 모든 것을 제공합니다."
+             data-en="Politics, sports, economy, crypto, stocks<br>— trade the real-time probability of upcoming events.<br><br>The prediction market is exploding worldwide — <span class='hlw'>EXIT</span> delivers it all: the platform, APIs, and automation systems.">정치·스포츠·경제·크립토·주식<br>— 다가올 사건의 확률을 실시간으로 거래합니다.<br><br>전 세계적으로 폭발적으로 성장하는 <span class="hlw" data-ko="예측마켓" data-en="Prediction">예측마켓</span>,<br><span class="exit-mark">E<span class="x">X</span>IT</span>는 예측마켓의 플랫폼 · API · 자동화 시스템 등 모든 것을 제공합니다.</p>
+          <div class="badges" style="margin-top:1.6rem">
+            <span class="chip" data-ko="P2P 거래" data-en="P2P trading">P2P 거래</span>
+            <span class="chip" data-ko="안정적 수익구조" data-en="Stable revenue">안정적 수익구조</span>
+            <span class="chip" data-ko="무한한 마켓 주제" data-en="Unlimited topics">무한한 마켓 주제</span>
+            <span class="chip" data-ko="트렌드" data-en="On-trend">트렌드</span>
+          </div>
+        </div>
+        <div class="pm-hero-cards" aria-hidden="true">
+          <div class="pm-market">
+            <div class="pm-m-head"><span class="pm-m-cat" data-ko="정치 · 선거" data-en="Politics · Election">정치 · 선거</span><span class="pm-m-live"><i></i>LIVE</span></div>
+            <div class="pm-m-q" data-ko="2026 미국 중간선거, 공화당이 상원을 지킬까?" data-en="2026 midterms — will the GOP hold the Senate?">2026 미국 중간선거, 공화당이 상원을 지킬까?</div>
+            <div class="pm-m-spark"><canvas data-pmchart data-mini data-colors="#2fe6a8,#e8a33a,#5aa9ff"></canvas></div>
+            <div class="pm-m-odds"><div class="yes"><span>YES</span><b>64¢</b></div><div class="no"><span>NO</span><b>36¢</b></div></div>
+            <div class="pm-m-bar"><i style="width:64%"></i></div>
+            <div class="pm-m-foot"><span data-ko="거래량 $4.2M" data-en="Volume $4.2M">거래량 $4.2M</span><span data-ko="12,480명 참여" data-en="12,480 traders">12,480명 참여</span></div>
+          </div>
+          <div class="pm-market">
+            <div class="pm-m-head"><span class="pm-m-cat" data-ko="⚽ 스포츠 · 월드컵" data-en="⚽ Sports · World Cup">⚽ 스포츠 · 월드컵</span><span class="pm-m-live"><i></i>LIVE</span></div>
+            <div class="pm-m-q" data-ko="2026 월드컵, 대한민국이 16강에 진출할까?" data-en="2026 World Cup — will Korea reach the R16?">2026 월드컵, 대한민국이 16강에 진출할까?</div>
+            <div class="pm-m-spark"><canvas data-pmchart data-mini data-colors="#5aa9ff,#ff5c7a"></canvas></div>
+            <div class="pm-m-odds"><div class="yes"><span>YES</span><b>58¢</b></div><div class="no"><span>NO</span><b>42¢</b></div></div>
+            <div class="pm-m-bar"><i style="width:58%"></i></div>
+            <div class="pm-m-foot"><span data-ko="거래량 $3.1M" data-en="Volume $3.1M">거래량 $3.1M</span><span data-ko="9,820명 참여" data-en="9,820 traders">9,820명 참여</span></div>
+          </div>
+          <div class="pm-market">
+            <div class="pm-m-head"><span class="pm-m-cat" data-ko="₿ 크립토" data-en="₿ Crypto">₿ 크립토</span><span class="pm-m-live"><i></i>LIVE</span></div>
+            <div class="pm-m-q" data-ko="비트코인, 연말까지 $150K 돌파할까?" data-en="Will Bitcoin break $150K by year-end?">비트코인, 연말까지 $150K 돌파할까?</div>
+            <div class="pm-m-spark"><canvas data-pmchart data-mini data-colors="#e8a33a,#2fe6a8,#5aa9ff,#ff5c7a"></canvas></div>
+            <div class="pm-m-odds"><div class="yes"><span>YES</span><b>41¢</b></div><div class="no"><span>NO</span><b>59¢</b></div></div>
+            <div class="pm-m-bar"><i style="width:41%"></i></div>
+            <div class="pm-m-foot"><span data-ko="거래량 $8.7M" data-en="Volume $8.7M">거래량 $8.7M</span><span data-ko="26,310명 참여" data-en="26,310 traders">26,310명 참여</span></div>
+          </div>
+          <div class="pm-market">
+            <div class="pm-m-head"><span class="pm-m-cat" data-ko="⚡ 크립토 · 초단기" data-en="⚡ Crypto · Short-term">⚡ 크립토 · 초단기</span><span class="pm-m-live"><i></i>LIVE</span></div>
+            <div class="pm-m-q" data-ko="이더리움, 5분 뒤 상승할까 하락할까?" data-en="ETH in 5 minutes — up or down?">이더리움, 5분 뒤 상승할까 하락할까?</div>
+            <div class="pm-m-spark"><canvas data-pmchart data-mini data-colors="#2fe6a8,#ff5c7a"></canvas></div>
+            <div class="pm-m-odds"><div class="yes"><span data-ko="상승" data-en="UP">상승</span><b>53¢</b></div><div class="no"><span data-ko="하락" data-en="DOWN">하락</span><b>47¢</b></div></div>
+            <div class="pm-m-bar"><i style="width:53%"></i></div>
+            <div class="pm-m-foot"><span data-ko="거래량 $1.4M" data-en="Volume $1.4M">거래량 $1.4M</span><span data-ko="5,210명 참여" data-en="5,210 traders">5,210명 참여</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 라이브 트레이딩 (실제 거래 화면) -->
+    <section class="alt-bg pm-trade-sec">
+      <div class="container">
+        <div class="section-head reveal" style="max-width:880px">
+          <span class="eyebrow" data-ko="실제 거래 화면" data-en="The live product">실제 거래 화면</span>
+          <h2 class="section-title" data-ko="P2P, 회원 대 회원 간의 실시간 거래" data-en="P2P — real-time peer-to-peer trading">P2P, 회원 대 회원 간의 실시간 거래</h2>
+          <p class="section-sub" data-ko="예측마켓은 매수 · 매도 · 지정가 · 시장가 등 다양한 기능으로 특별한 예측거래를 선사합니다." data-en="Prediction markets offer a unique trading experience — buy, sell, limit and market orders, and more.">예측마켓은 매수 · 매도 · 지정가 · 시장가 등 다양한 기능으로 특별한 예측거래를 선사합니다.</p>
+        </div>
+        <div class="pm-trade reveal">
+          <div class="pm-trade-chart">
+            <div class="pm-tc-head">
+              <div class="pm-tc-title">
+                <span class="pm-tc-icon" data-pmicon></span>
+                <div class="pm-tc-titletext">
+                  <span class="pm-tc-cat" data-pmcat>스포츠 · 축구 · 월드컵</span>
+                  <div class="pm-tc-q" data-pmq>2026 월드컵 우승 국가는?</div>
+                </div>
+              </div>
+              <div class="pm-tc-now"><b class="lg0">42%</b><span data-ko="실시간 확률" data-en="Live odds">실시간 확률</span></div>
+            </div>
+            <div class="pm-tc-legend">
+              <span data-leg="0"><i style="background:#ffffff"></i><em class="lbl0">브라질</em> <b class="lg0">42%</b></span>
+              <span data-leg="1"><i style="background:#ff5c7a"></i><em class="lbl1">아르헨티나</em> <b class="lg1">28%</b></span>
+              <span data-leg="2"><i style="background:#5aa9ff"></i><em class="lbl2">프랑스</em> <b class="lg2">18%</b></span>
+              <span data-leg="3"><i style="background:#2fe6a8"></i><em class="lbl3">스페인</em> <b class="lg3">12%</b></span>
+            </div>
+            <canvas class="pm-canvas" data-pmchart data-colors="#ffffff,#ff5c7a,#5aa9ff,#2fe6a8"></canvas>
+            <div class="pm-tc-foot">
+              <span class="pm-tc-vol">$2,769,568 <em data-ko="거래량" data-en="vol">거래량</em></span>
+              <span class="pm-tc-range"><b>1D</b><b>1W</b><b>1M</b><b class="on">ALL</b></span>
+            </div>
+            <div class="pm-oc-head"><span data-ko="마켓" data-en="Market">마켓</span><span data-ko="확률" data-en="Chance">확률</span><span>YES</span><span>NO</span></div>
+            <div class="pm-tc-outcomes" data-pmoutcomes></div>
+          </div>
+          <div class="pm-buy">
+            <div class="pm-buy-tabs">
+              <div class="pm-buy-toggle" data-mode="buy">
+                <span class="pm-bt-thumb"></span>
+                <button type="button" class="pm-tab on" data-tab="buy" data-ko="매수" data-en="Buy">매수</button>
+                <button type="button" class="pm-tab" data-tab="sell" data-ko="매도" data-en="Sell">매도</button>
+              </div>
+              <div class="pm-buy-order">
+                <button type="button" class="pm-buy-mkt" data-ko="지정가 <em>▾</em>" data-en="Limit <em>▾</em>">지정가 <em>▾</em></button>
+                <div class="pm-buy-menu" hidden>
+                  <button type="button" data-order="limit" data-ko="지정가" data-en="Limit">지정가</button>
+                  <button type="button" data-order="market" data-ko="시장가" data-en="Market">시장가</button>
+                </div>
+              </div>
+            </div>
+            <div class="pm-buy-sel"><span class="pm-buy-ic" data-pmselicon></span><b data-pmsel>브라질</b></div>
+            <div class="pm-buy-yn">
+              <button type="button" class="yes on"><span>YES</span><b>42¢</b></button>
+              <button type="button" class="no"><span>NO</span><b>58¢</b></button>
+            </div>
+            <div class="pm-buy-field"><span data-ko="수량" data-en="Shares">수량</span><b class="pm-amt">0</b></div>
+            <div class="pm-buy-chips"><span data-amt="1">+1</span><span data-amt="20">+20</span><span data-amt="100">+100</span><span data-amt="max" data-ko="최대" data-en="Max">최대</span></div>
+            <div class="pm-buy-field"><span data-ko="지정가" data-en="Limit price">지정가</span><b class="pm-limit">42¢</b></div>
+            <div class="pm-buy-field"><span data-ko="만료" data-en="Expiration">만료</span><b data-ko="주문취소 전까지 ▾" data-en="Good 'til canceled ▾">주문취소 전까지 ▾</b></div>
+            <div class="pm-buy-cost">
+              <div><span data-ko="비용" data-en="Cost">비용</span><b class="pm-cost">$0.00</b></div>
+              <div class="r"><span data-ko="최대 수익" data-en="Max payout">최대 수익</span><b class="pm-payout">$0.00</b></div>
+            </div>
+            <button type="button" class="pm-buy-cta">YES 매수</button>
+            <p class="pm-buy-terms" data-ko="거래 시 이용약관에 동의하게 됩니다." data-en="By trading, you agree to the Terms of Use">거래 시 이용약관에 동의하게 됩니다.</p>
+          </div>
+        </div>
+        <p class="pm-trade-note reveal" data-ko="* 화면은 예시이며, 실제 마켓·가격·거래량은 운영사 설정에 따라 달라집니다." data-en="* Illustrative screen; real markets, prices, and volume depend on the operator's configuration.">* 화면은 예시이며, 실제 마켓·가격·거래량은 운영사 설정에 따라 달라집니다.</p>
+      </div>
+    </section>
+
+    <!-- 예측마켓이란 -->
+    <section>
+      <div class="container">
+        <div class="piq-row2">
+          <div class="piq-copy reveal">
+          <span class="eyebrow" data-ko="예측마켓이란?" data-en="What is it?">예측마켓이란?</span>
+          <h2 class="section-title" data-ko="전 세계 모든 주제의<br>예측이 가격이 되고 거래가 됩니다." data-en="Every topic on earth —<br>its prediction becomes a tradable price">전 세계 모든 주제의<br>예측이 가격이 되고 거래가 됩니다.</h2>
+          <p class="piq-quote" data-ko="“돈은 거짓말을 하지 않는다”" data-en="“Money doesn't lie.”">“돈은 거짓말을 하지 않는다”</p>
+          <p class="lead" data-ko="지난 <span class='hlw'>미국 대선, 암호화폐 시세, 주가, 글로벌</span> 이슈까지 <br><span class='hl'>어느 주제에서든</span> 참여자들은 진지하게 정보를 분석합니다. <br>실제 돈을 건 이들의 집단지성은 <br><span class='hlw'>기존 여론조사보다 더 정확한 확률</span>을 실시간으로 보여줍니다."
+             data-en="From the last <span class='hlw'>U.S. election, crypto prices, stocks and global events</span> <br><span class='hl'>on any topic</span>, participants seriously analyze the information. <br> <br>The money-backed wisdom of the crowd shows <br><span class='hlw'>more accurate odds than any poll</span> — in real time.">지난 <span class="hlw">미국 대선, 암호화폐 시세, 주가, 글로벌</span> 이슈까지 <br><span class="hl">어느 주제에서든</span> 참여자들은 진지하게 정보를 분석합니다. <br>실제 돈을 건 이들의 집단지성은 <br><span class="hlw">기존 여론조사보다 더 정확한 확률</span>을 실시간으로 보여줍니다.</p>
+          <div class="piq-points">
+              <div class="piq-pt"><span class="piq-pt-n">1</span><div><b data-ko="결과에 베팅" data-en="Bet on outcomes">결과에 베팅</b><span data-ko="‘예/아니오’로 정산되는 사건을 YES·NO로 거래합니다." data-en="Trade YES·NO on events that settle Yes or No.">‘예/아니오’로 정산되는 사건을 YES·NO로 거래합니다.</span></div></div>
+              <div class="piq-pt"><span class="piq-pt-n">2</span><div><b data-ko="가격 = 확률" data-en="Price = probability">가격 = 확률</b><span data-ko="YES 64¢는 곧 일어날 확률 64%. 가격이 그대로 확률입니다." data-en="YES at 64¢ means a 64% chance — the price is the probability.">YES 64¢는 곧 일어날 확률 64%. 가격이 그대로 확률입니다.</span></div></div>
+              <div class="piq-pt"><span class="piq-pt-n">3</span><div><b data-ko="결과 전에도 수익 실현" data-en="Profit before it settles">결과 전에도 수익 실현</b><span data-ko="결과를 기다릴 필요 없이 — 낮은 확률(가격)에 사서 오른 가격에 팔면, 그 즉시 차익을 실현합니다." data-en="No need to wait for the result — buy at a low price and sell higher to lock in profit instantly.">결과를 기다릴 필요 없이 — 낮은 확률(가격)에 사서 오른 가격에 팔면, 그 즉시 차익을 실현합니다.</span></div></div>
+            </div>
+          </div>
+          <div class="piq reveal" aria-hidden="true">
+            <div class="piq-head"><span class="piq-cat" data-ko="금리 · 경제" data-en="Rates · Economy">금리 · 경제</span><span class="piq-live"><i></i>LIVE</span></div>
+            <div class="piq-q" data-ko="올해 안에 기준금리가 인하될까?" data-en="Will the base rate be cut this year?">올해 안에 기준금리가 인하될까?</div>
+            <div class="piq-gauge"><div class="piq-pct"><b class="piq-num">64</b><em>%</em></div><span class="piq-sub" data-ko="실시간 YES 확률" data-en="Live YES odds">실시간 YES 확률</span></div>
+            <div class="piq-bar"><i class="piq-fill" style="width:64%"></i></div>
+            <div class="piq-odds"><span class="y">YES <b class="piq-yes">64¢</b></span><span class="n">NO <b class="piq-no">36¢</b></span></div>
+            <div class="piq-stream">
+              <span class="piq-trade y" style="--x:16%;--d:0s">+$80 · YES</span>
+              <span class="piq-trade n" style="--x:64%;--d:0.6s">+$45 · NO</span>
+              <span class="piq-trade y" style="--x:40%;--d:1.2s">+$120 · YES</span>
+              <span class="piq-trade y" style="--x:82%;--d:1.7s">+$60 · YES</span>
+              <span class="piq-trade n" style="--x:28%;--d:2.3s">+$30 · NO</span>
+              <span class="piq-trade y" style="--x:56%;--d:2.9s">+$200 · YES</span>
+            </div>
+            <div class="piq-foot">
+              <div class="piq-stat"><span data-ko="실시간 참여" data-en="Live traders">실시간 참여</span><b class="piq-cnt">12,480</b></div>
+              <div class="piq-stat r"><span data-ko="거래량" data-en="Volume">거래량</span><b class="piq-vol">$142,800</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 절대적 수익구조 -->
+    <section class="alt-bg">
+      <div class="container">
+        <div class="pm-rev-row">
+          <div class="rev3 reveal" aria-hidden="true">
+            <div class="rev3-top">
+              <span class="rev3-top-lbl" data-ko="이번 라운드 결과" data-en="This round's result">이번 라운드 결과</span>
+              <span class="rev3-result yes" data-rev-flip>YES 승리</span>
+            </div>
+            <div class="rev3-table">
+              <div class="rev3-line">
+                <span class="rev3-k" data-ko="이용자" data-en="Users">이용자</span>
+                <span class="rev3-v" data-rev-user>YES 승 · NO 패</span>
+              </div>
+              <div class="rev3-line hot">
+                <span class="rev3-k" data-ko="<span class='exit-mark'>E<span class='x'>X</span>IT</span> 운영자" data-en="<span class='exit-mark'>E<span class='x'>X</span>IT</span> Operator"><span class="exit-mark">E<span class="x">X</span>IT</span> 운영자</span>
+                <span class="rev3-v win" data-ko="＋ 수수료 수익 ✓" data-en="＋ Fee revenue ✓">＋ 수수료 수익 ✓</span>
+              </div>
+            </div>
+            <div class="rev3-note" data-ko="결과가 YES든 NO든 — 운영자 수익은 <span class='hl'>언제나 동일</span>" data-en="YES or NO — the operator's revenue is <span class='hl'>always the same</span>">결과가 YES든 NO든 — 운영자 수익은 <span class="hl">언제나 동일</span></div>
+            <div class="rev3-summary">
+              <div><span data-ko="운영자 리스크" data-en="Operator risk">운영자 리스크</span><b class="zero">0</b></div>
+              <div><span data-ko="수익 공식" data-en="Revenue">수익 공식</span><b data-ko="거래량 × 수수료" data-en="Volume × Fee">거래량 × 수수료</b></div>
+            </div>
+          </div>
+          <div class="reveal" data-delay="1">
+            <span class="eyebrow" data-ko="절대적 수익구조" data-en="Built-in revenue">절대적 수익구조</span>
+            <h2 class="section-title rev2-title" data-ko="운영자는 하우스가 아닙니다.<br>거래량에 비례한 절대적인 수익을 실현합니다." data-en="The operator is not the house.<br>Absolute revenue that scales with volume.">운영자는 하우스가 아닙니다.<br>거래량에 비례한 절대적인 수익을 실현합니다.</h2>
+            <p class="lead" data-ko="운영자는 <span class='hl-yes'>YES</span> / <span class='hl-no'>NO</span>, 어떤 결과가 나오든<br>거래 수수료 방식, 당첨 수수료 방식 등 설정한 수수료 방식에 따라<br><span class='hl'>‘리스크 없는’</span> 거래량에 비례하는 <span class='hl'>절대적 수익구조</span>입니다."
+               data-en="Whether <span class='hl-yes'>YES</span> or <span class='hl-no'>NO</span> — no matter the outcome<br>the operator earns by the configured fee model — trading fee, winner's fee and more —<br>a <span class='hl'>risk-free</span> revenue that <span class='hl'>scales with volume</span>.">운영자는 <span class="hl-yes">YES</span> / <span class="hl-no">NO</span>, 어떤 결과가 나오든<br>거래 수수료 방식, 당첨 수수료 방식 등 설정한 수수료 방식에 따라<br><span class="hl">‘리스크 없는’</span> 거래량에 비례하는 <span class="hl">절대적 수익구조</span>입니다.</p>
+            <div class="rev2-fees">
+              <span class="rev2-fee-item"><b data-ko="거래 수수료" data-en="Trading fee">거래 수수료</b><em data-ko="메이커·테이커 방식" data-en="Maker · Taker">메이커·테이커 방식</em></span>
+              <span class="rev2-fee-item"><b data-ko="매수/매도 스프레드" data-en="Spread">매수/매도 스프레드</b><em data-ko="가격 차 수취" data-en="Bid-ask">가격 차 수취</em></span>
+              <span class="rev2-fee-item"><b data-ko="유동성 수수료" data-en="Liquidity fee">유동성 수수료</b><em data-ko="마켓 생성 시" data-en="Market making">마켓 생성 시</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AMM -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal" style="max-width:860px">
+          <span class="eyebrow" data-ko="AMM · 자동 마켓 메이커" data-en="AMM · Automated Market Maker">AMM · 자동 마켓 메이커</span>
+          <h2 class="section-title" data-ko="상대방이 없어도, 24시간 즉시 거래" data-en="Trade instantly, 24/7 — no counterparty needed">상대방이 없어도, 24시간 즉시 거래</h2>
+          <p class="section-sub" data-ko="예측마켓에서의 초기 유동성과 마켓 메이커에 대한 우려는 모든 예측마켓 운영자가 겪는 고민입니다.<br><span class='hl-no'>EXIT의 자동 AMM 시스템은 주문 상대를 기다릴 필요가 없습니다.</span><br>알고리즘으로 상시 호가를 제시해, 신규 마켓도 즉시 깊은 유동성으로 거래됩니다." data-en="Initial liquidity and market-making are a worry every prediction-market operator faces.<br><span class='hl-no'>EXIT's automated AMM needs no counterparty to wait for.</span><br>It algorithmically quotes at all times, so even brand-new markets trade with deep liquidity instantly.">예측마켓에서의 초기 유동성과 마켓 메이커에 대한 우려는 모든 예측마켓 운영자가 겪는 고민입니다.<br><span class="hl-no">EXIT의 자동 AMM 시스템은 주문 상대를 기다릴 필요가 없습니다.</span><br>알고리즘으로 상시 호가를 제시해, 신규 마켓도 즉시 깊은 유동성으로 거래됩니다.</p>
+        </div>
+        <div class="amm-cards">
+          <div class="amm-card reveal">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11z"/></svg></span><span class="amm-n">01</span></div>
+            <h3 data-ko="상시 유동성" data-en="Always-on liquidity">상시 유동성</h3>
+            <p data-ko="주문 상대 없이도 AMM 풀이 <br>항상 매수·매도 호가를 제시해, <br>언제든 즉시 체결됩니다." data-en="The AMM pool always quotes both sides, so any trade fills instantly without a counterparty.">주문 상대 없이도 AMM 풀이 <br>항상 매수·매도 호가를 제시해, <br>언제든 즉시 체결됩니다.</p>
+          </div>
+          <div class="amm-card reveal" data-delay="1">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 4-7"/></svg></span><span class="amm-n">02</span></div>
+            <h3 data-ko="자동 가격 형성" data-en="Algorithmic pricing">자동 가격 형성</h3>
+            <p data-ko="LMSR·CPMM 등 검증된 <br>알고리즘이 거래량에 따라 <br>확률(가격)을 0~100¢ <br>사이에서 즉시 조정합니다." data-en="Proven algorithms like LMSR and CPMM adjust the probability (price) between 0–100¢ in real time as volume flows.">LMSR·CPMM 등 검증된 <br>알고리즘이 거래량에 따라 <br>확률(가격)을 0~100¢ <br>사이에서 즉시 조정합니다.</p>
+          </div>
+          <div class="amm-card reveal" data-delay="2">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span><span class="amm-n">03</span></div>
+            <h3 data-ko="콜드 스타트 없음" data-en="No cold start">콜드 스타트 없음</h3>
+            <p data-ko="신규 마켓도 AMM이 <br>초기 유동성을 부트스트랩해<br>첫 참여자부터 바로 거래할 수 있습니다." data-en="The AMM bootstraps initial liquidity, so brand-new markets are tradable from the very first user.">신규 마켓도 AMM이 <br>초기 유동성을 부트스트랩해<br>첫 참여자부터 바로 거래할 수 있습니다.</p>
+          </div>
+          <div class="amm-card reveal" data-delay="3">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></span><span class="amm-n">04</span></div>
+            <h3 data-ko="낮은 슬리피지" data-en="Low slippage">낮은 슬리피지</h3>
+            <p data-ko="0~100¢ 구간에 집중된 유동성으로 <br>자본 효율을 높여, 큰 주문에도 <br>가격 충격을 최소화합니다." data-en="Liquidity concentrated in the 0–100¢ range maximizes capital efficiency and minimizes price impact on large orders.">0~100¢ 구간에 집중된 유동성으로 <br>자본 효율을 높여, 큰 주문에도 <br>가격 충격을 최소화합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI 자동화 -->
+    <section class="alt-bg">
+      <div class="container">
+        <div class="section-head reveal" style="max-width:1060px">
+          <span class="eyebrow" data-ko="AI 자동화" data-en="AI Automation">AI 자동화</span>
+          <h2 class="section-title" data-ko="마켓 생성부터 결과처리<br>그리고 자동 입출금까지 100% 자동화 시스템 제공" data-en="From market creation to settlement,<br>even deposits &amp; withdrawals — 100% automated">마켓 생성부터 결과처리<br>그리고 자동 입출금까지 100% 자동화 시스템 제공</h2>
+          <p class="section-sub" data-ko="<span class='exit-mark'>E<span class='x'>X</span>IT</span>의 AI가 전 세계 이슈를 실시간으로 수집해 <span class='hl'>거래 가능한 마켓을 자동 생성</span>하고,<br>결과가 확정되면 검증된 데이터로 <span class='hlw'>자동 판정·정산</span>합니다.<br>사람이 일일이 만들지 않아도 수천 개의 마켓이 24시간 돌아갑니다." data-en="<span class='exit-mark'>E<span class='x'>X</span>IT</span>'s AI scans global events in real time to <span class='hl'>auto-create tradable markets</span>,<br>then <span class='hlw'>auto-resolves and settles</span> from verified data once outcomes are known.<br>Thousands of markets run 24/7 with no manual effort."><span class="exit-mark">E<span class="x">X</span>IT</span>의 AI가 전 세계 이슈를 실시간으로 수집해 <span class="hl">거래 가능한 마켓을 자동 생성</span>하고,<br>결과가 확정되면 검증된 데이터로 <span class="hlw">자동 판정·정산</span>합니다.<br>사람이 일일이 만들지 않아도 수천 개의 마켓이 24시간 돌아갑니다.</p>
+        </div>
+        <div class="amm-cards">
+          <div class="amm-card reveal">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></span><span class="amm-n">01</span></div>
+            <h3 data-ko="마켓 자동 수집·생성" data-en="Auto market sourcing">마켓 자동 수집·생성</h3>
+            <p data-ko="뉴스·스포츠·경제·크립토 데이터를 실시간 모니터링해, 거래 가능한 마켓을 자동으로 만들고 등록합니다." data-en="Monitors news, sports, economy and crypto feeds in real time to auto-generate and list tradable markets.">뉴스·스포츠·경제·크립토 데이터를 실시간 모니터링해, 거래 가능한 마켓을 자동으로 만들고 등록합니다.</p>
+          </div>
+          <div class="amm-card reveal" data-delay="1">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 4.5-3 7.5-8 9-5-1.5-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><span class="amm-n">02</span></div>
+            <h3 data-ko="자동 결과처리·정산" data-en="Auto resolution">자동 결과처리·정산</h3>
+            <p data-ko="결과가 확정되면 신뢰할 수 있는 데이터 소스로 자동 판정하고, 승자에게 즉시 정산·지급합니다." data-en="When outcomes are known, results are auto-judged from trusted data sources and winners are paid out instantly.">결과가 확정되면 신뢰할 수 있는 데이터 소스로 자동 판정하고, 승자에게 즉시 정산·지급합니다.</p>
+          </div>
+          <div class="amm-card reveal" data-delay="2">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="amm-n">03</span></div>
+            <h3 data-ko="24시간 무인 운영" data-en="24/7 hands-off ops">24시간 무인 운영</h3>
+            <p data-ko="수천 개의 마켓이 사람 손 없이 자동으로 개설·마감·정산되어, 운영 인력 부담을 크게 줄입니다." data-en="Thousands of markets open, close and settle automatically — slashing the operational headcount you need.">수천 개의 마켓이 사람 손 없이 자동으로 개설·마감·정산되어, 운영 인력 부담을 크게 줄입니다.</p>
+          </div>
+          <div class="amm-card reveal" data-delay="3">
+            <div class="amm-card-top"><span class="amm-ic"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg></span><span class="amm-n">04</span></div>
+            <h3 data-ko="이상거래·리스크 감지" data-en="Risk &amp; fraud detection">이상거래·리스크 감지</h3>
+            <p data-ko="AI가 비정상 거래·시세 조작·어뷰징을 실시간 탐지하고 자동으로 차단합니다." data-en="AI detects abnormal trades, manipulation and abuse in real time and blocks them automatically.">AI가 비정상 거래·시세 조작·어뷰징을 실시간 탐지하고 자동으로 차단합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 왜 예측마켓인가 (장점) -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal" style="max-width:1040px">
+          <span class="eyebrow" data-ko="도박이 아닙니다" data-en="Not gambling">도박이 아닙니다</span>
+          <h2 class="section-title" data-ko="왜 예측마켓인가?" data-en="Why prediction markets?">왜 예측마켓인가?</h2>
+          <p class="section-sub" data-ko="예측마켓은 <span class='hl'>도박 산업이 아닙니다.</span> 지금 예측마켓은 전 세계적으로 참여자와 거래량이 폭발적으로 늘어나는 추세이며,<br>폴리마켓·칼시(Kalshi)처럼 단 하나의 이슈로 <span class='hlw'>천문학적인 거래량</span>을 만들어낸 기업들이 이미 등장했습니다.<br>예측마켓의 미래성은 <span class='hl'>이미 충분히 증명</span>되었습니다." data-en="Prediction markets are <span class='hl'>not a gambling industry.</span> Participation and volume are climbing explosively across the globe,<br>and firms like Polymarket and Kalshi have already produced <span class='hlw'>astronomical volume</span> from a single event.<br>The future of prediction markets is <span class='hl'>already proven.</span>">예측마켓은 <span class="hl">도박 산업이 아닙니다.</span> 지금 예측마켓은 전 세계적으로 참여자와 거래량이 폭발적으로 늘어나는 추세이며,<br>폴리마켓·칼시(Kalshi)처럼 단 하나의 이슈로 <span class="hlw">천문학적인 거래량</span>을 만들어낸 기업들이 이미 등장했습니다.<br>예측마켓의 미래성은 <span class="hl">이미 충분히 증명</span>되었습니다.</p>
+        </div>
+        <div class="wpm-chat">
+          <div class="wpm-bubble left reveal" style="--wf:0s">
+            <span class="wpm-av">🔥</span>
+            <div class="wpm-msg">
+              <h4 data-ko="이슈가 커질수록 관심도 증가" data-en="Bigger the story, bigger the interest">이슈가 커질수록 관심도 증가</h4>
+              <p data-ko="모든 이슈는 화제가 커질수록 더 많은 참여자와 관심을 마켓으로 끌어옵니다." data-en="Every issue pulls in more participants and attention as it grows.">모든 이슈는 화제가 커질수록 더 많은 참여자와 관심을 마켓으로 끌어옵니다.</p>
+            </div>
+          </div>
+          <div class="wpm-bubble right reveal" data-delay="1" style="--wf:-1s">
+            <span class="wpm-av">📱</span>
+            <div class="wpm-msg">
+              <h4 data-ko="알고리즘 기반 마케팅 다양성" data-en="Algorithm-native marketing">알고리즘 기반 마케팅 다양성</h4>
+              <p data-ko="유튜브·릴스·숏츠 등 알고리즘 형태의 콘텐츠로 마켓이 자연스럽게 확산됩니다." data-en="Spreads organically through YouTube, Reels and Shorts-style algorithmic content.">유튜브·릴스·숏츠 등 알고리즘 형태의 콘텐츠로 마켓이 자연스럽게 확산됩니다.</p>
+            </div>
+          </div>
+          <div class="wpm-bubble left reveal" data-delay="2" style="--wf:-2s">
+            <span class="wpm-av">🎯</span>
+            <div class="wpm-msg">
+              <h4 data-ko="주제마다 새로운 타겟팅" data-en="Fresh targeting per topic">주제마다 새로운 타겟팅</h4>
+              <p data-ko="생성되는 마켓 주제마다 참여자층이 달라져, 매번 새로운 타겟을 노릴 수 있습니다." data-en="Each new market topic reaches a different audience — a fresh target every time.">생성되는 마켓 주제마다 참여자층이 달라져, 매번 새로운 타겟을 노릴 수 있습니다.</p>
+            </div>
+          </div>
+          <div class="wpm-bubble right accent reveal" data-delay="3" style="--wf:-3s">
+            <span class="wpm-av">🧠</span>
+            <div class="wpm-msg">
+              <h4 data-ko="도박이 아닌 집단지성 플랫폼" data-en="Collective intelligence, not gambling">도박이 아닌 집단지성 플랫폼</h4>
+              <p data-ko="운에 기대는 도박 산업이 아니라, 집단지성으로 미래를 예측하는 플랫폼입니다." data-en="Not a game of chance, but a platform where collective intelligence forecasts the future.">운에 기대는 도박 산업이 아니라, 집단지성으로 미래를 예측하는 플랫폼입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마켓 카테고리 -->
+    <section class="alt-bg">
+      <div class="container">
+        <div class="section-head reveal" style="max-width:1040px">
+          <span class="eyebrow" data-ko="마켓 카테고리" data-en="Market categories">마켓 카테고리</span>
+          <h2 class="section-title" data-ko="무한한 마켓 주제" data-en="Infinite market topics">무한한 마켓 주제</h2>
+          <p class="section-sub" data-ko="정치·사회·경제·암호화폐·스포츠·문화·글로벌 이슈까지, <span class='hlw'>세상의 모든 사건이 하나의 마켓</span>이 됩니다.<br>같은 주제라도 제목과 조건에 따라 서로 다른 마켓을 얼마든지 생성할 수 있고,<br>마켓 주제마다 새로운 참여자를 찾아 <span class='hl'>마케팅 효과를 극대화</span>합니다." data-en="From politics, society, economy and crypto to sports, culture and global affairs — <span class='hlw'>every event becomes a market</span>.<br>Even a single topic can spawn countless markets depending on the question,<br>and each topic reaches fresh participants to <span class='hl'>maximize marketing impact</span>.">정치·사회·경제·암호화폐·스포츠·문화·글로벌 이슈까지, <span class="hlw">세상의 모든 사건이 하나의 마켓</span>이 됩니다.<br>같은 주제라도 제목과 조건에 따라 서로 다른 마켓을 얼마든지 생성할 수 있고,<br>마켓 주제마다 새로운 참여자를 찾아 <span class="hl">마케팅 효과를 극대화</span>합니다.</p>
+        </div>
+        <div class="mkt-grid reveal">
+          <div class="mkt-tile" style="--c:255,107,139;--d:0s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2"/><path d="M9 13.5l2 2 4-4"/></svg></span><div class="mkt-tx"><b data-ko="정치 · 선거" data-en="Politics">정치 · 선거</b><em data-ko="대선 · 총선 · 정책" data-en="Elections · policy">대선 · 총선 · 정책</em></div></div>
+          <div class="mkt-tile" style="--c:77,212,255;--d:.4s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v1.5a3 3 0 0 1-3 3"/><path d="M7 5H4v1.5a3 3 0 0 0 3 3"/><path d="M12 14v4"/><path d="M8.5 21h7"/><path d="M10 18h4"/></svg></span><div class="mkt-tx"><b data-ko="스포츠" data-en="Sports">스포츠</b><em data-ko="축구 · 야구 · e스포츠" data-en="Football · baseball · esports">축구 · 야구 · e스포츠</em></div></div>
+          <div class="mkt-tile" style="--c:247,185,85;--d:.8s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.6 9.4a3 3 0 0 0-2.9-1.9c-1.6 0-2.7 1-2.7 2.2 0 3 5.6 1.6 5.6 4.6 0 1.3-1.3 2.3-3 2.3a3.2 3.2 0 0 1-3-1.9"/><path d="M12 6v1.6M12 16.4V18"/></svg></span><div class="mkt-tx"><b data-ko="크립토 · 금융" data-en="Crypto · Finance">크립토 · 금융</b><em data-ko="BTC · ETH · 시세" data-en="BTC · ETH · price">BTC · ETH · 시세</em></div></div>
+          <div class="mkt-tile" style="--c:47,230,168;--d:1.2s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l3.2-4 3 2.6L20 6"/><path d="M16 6h4v4"/></svg></span><div class="mkt-tx"><b data-ko="경제 · 지표" data-en="Economy">경제 · 지표</b><em data-ko="금리 · 환율 · CPI" data-en="Rates · FX · CPI">금리 · 환율 · CPI</em></div></div>
+          <div class="mkt-tile" style="--c:185,140,255;--d:1.6s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9.5h18M3 14.5h18M8 5v14M16 5v14"/></svg></span><div class="mkt-tx"><b data-ko="연예 · 문화" data-en="Entertainment">연예 · 문화</b><em data-ko="시상식 · 흥행 · 차트" data-en="Awards · box office · charts">시상식 · 흥행 · 차트</em></div></div>
+          <div class="mkt-tile" style="--c:92,200,255;--d:2s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5" rx="0.5"/><path d="M9 3.5v3M15 3.5v3M9 17.5v3M15 17.5v3M3.5 9h3M3.5 15h3M17.5 9h3M17.5 15h3"/></svg></span><div class="mkt-tx"><b data-ko="AI · 테크" data-en="AI · Tech">AI · 테크</b><em data-ko="신제품 · 출시 · 경쟁" data-en="Launches · releases · races">신제품 · 출시 · 경쟁</em></div></div>
+          <div class="mkt-tile" style="--c:127,224,129;--d:2.4s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><path d="M17 15a4 4 0 0 0-1-7.9 5 5 0 0 0-9.6 1.4A3.5 3.5 0 0 0 6.5 15z"/><path d="M8 18l-1 2.5M12 18l-1 2.5M16 18l-1 2.5"/></svg></span><div class="mkt-tx"><b data-ko="날씨 · 기후" data-en="Weather">날씨 · 기후</b><em data-ko="기온 · 강수 · 이변" data-en="Temp · rain · extremes">기온 · 강수 · 이변</em></div></div>
+          <div class="mkt-tile" style="--c:255,216,77;--d:2.8s"><span class="mkt-ic"><svg viewBox="0 0 24 24"><path d="M11 3l1.7 4.8L17 9.5l-4.3 1.7L11 16l-1.7-4.8L5 9.5l4.3-1.7z"/><path d="M18 14l.6 1.9 1.9.6-1.9.6-.6 1.9-.6-1.9-1.9-.6 1.9-.6z"/></svg></span><div class="mkt-tx"><b data-ko="그 외 모든 사건" data-en="And everything">그 외 모든 사건</b><em data-ko="당신이 정하는 마켓" data-en="Any market you define">당신이 정하는 마켓</em></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXIT가 제공 -->
+    <section>
+      <div class="container">
+        <div class="section-head reveal" style="max-width:860px">
+          <span class="eyebrow" data-ko="EXIT가 제공합니다" data-en="What EXIT delivers">EXIT가 제공합니다</span>
+          <h2 class="section-title" data-ko="기획부터 정산까지,<br>예측마켓 풀스택 올인원 플랫폼" data-en="From design to settlement,<br>a full-stack all-in-one platform">기획부터 정산까지,<br>예측마켓 풀스택 올인원 플랫폼</h2>
+          <p class="section-sub" data-ko="마켓 엔진과 AMM 유동성, AI 자동화, 결제 연동, 운영 백오피스까지<br><span class='hlw'>오랜 경험</span>으로 예측마켓 사업에 필요한 모든 것을 <span class='exit-mark'>E<span class='x'>X</span>IT</span>는 <span class='hl'>귀사의 브랜드로 제작</span>합니다." data-en="Market engine, AMM liquidity, AI automation, payments and back office<br>— with <span class='hlw'>years of experience</span>, <span class='exit-mark'>E<span class='x'>X</span>IT</span> builds everything your prediction-market business needs <span class='hl'>under your brand</span>.">마켓 엔진과 AMM 유동성, AI 자동화, 결제 연동, 운영 백오피스까지<br><span class="hlw">오랜 경험</span>으로 예측마켓 사업에 필요한 모든 것을 <span class="exit-mark">E<span class="x">X</span>IT</span>는 <span class="hl">귀사의 브랜드로 제작</span>합니다.</p>
+        </div>
+        <div class="stack-list reveal">
+          <div class="stack-layer" style="--d:0s;--sc:47,230,168"><span class="stack-shine"></span>
+            <span class="stack-idx">01</span>
+            <span class="stack-ic"><svg viewBox="0 0 24 24"><path d="M4 8h11l-3-3M4 8l3 3"/><path d="M20 16H9l3 3M20 16l-3-3"/></svg></span>
+            <div class="stack-tx"><b data-ko="마켓 엔진 · 매칭" data-en="Market engine · matching">마켓 엔진 · 매칭</b><p data-ko="YES·NO 주문 매칭, 가격 형성, 포지션 관리까지 핵심 거래 엔진을 제공합니다." data-en="Order matching, pricing and position management — the core trading engine.">YES·NO 주문 매칭, 가격 형성, 포지션 관리까지 핵심 거래 엔진을 제공합니다.</p></div>
+            <span class="stack-tag" data-ko="코어 엔진" data-en="Core engine">코어 엔진</span>
+          </div>
+          <div class="stack-layer" style="--d:.5s;--sc:77,212,255"><span class="stack-shine"></span>
+            <span class="stack-idx">02</span>
+            <span class="stack-ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11z"/></svg></span>
+            <div class="stack-tx"><b data-ko="AMM 유동성" data-en="AMM liquidity">AMM 유동성</b><p data-ko="자동 마켓 메이커(AMM)가 상시 호가를 제시해, 상대방 없이도 24시간 즉시 체결됩니다." data-en="An automated market maker quotes around the clock, filling trades instantly without a counterparty.">자동 마켓 메이커(AMM)가 상시 호가를 제시해, 상대방 없이도 24시간 즉시 체결됩니다.</p></div>
+            <span class="stack-tag" data-ko="유동성" data-en="Liquidity">유동성</span>
+          </div>
+          <div class="stack-layer" style="--d:1s;--sc:185,140,255"><span class="stack-shine"></span>
+            <span class="stack-idx">03</span>
+            <span class="stack-ic"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="7" height="8" rx="1.5"/><rect x="14" y="8" width="7" height="8" rx="1.5"/><path d="M10 12h4"/></svg></span>
+            <div class="stack-tx"><b data-ko="온체인 · 오프체인 정산" data-en="On/Off-chain settlement">온체인 · 오프체인 정산</b><p data-ko="스마트컨트랙트 정산과 전통 백엔드를 모두 지원해 투명성과 속도를 동시에 확보합니다." data-en="Both smart-contract and traditional settlement — transparency and speed at once.">스마트컨트랙트 정산과 전통 백엔드를 모두 지원해 투명성과 속도를 동시에 확보합니다.</p></div>
+            <span class="stack-tag" data-ko="정산" data-en="Settlement">정산</span>
+          </div>
+          <div class="stack-layer" style="--d:1.5s;--sc:247,185,85"><span class="stack-shine"></span>
+            <span class="stack-idx">04</span>
+            <span class="stack-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span>
+            <div class="stack-tx"><b data-ko="전 결제수단 연동" data-en="All payment rails">전 결제수단 연동</b><p data-ko="크립토·카드·전자결제로 입출금하고, 자동 입출금 캐셔까지 지원합니다." data-en="Deposit and withdraw via crypto, card and e-pay — with an automated cashier.">크립토·카드·전자결제로 입출금하고, 자동 입출금 캐셔까지 지원합니다.</p></div>
+            <span class="stack-tag" data-ko="결제" data-en="Payments">결제</span>
+          </div>
+          <div class="stack-layer" style="--d:2s;--sc:255,107,139"><span class="stack-shine"></span>
+            <span class="stack-idx">05</span>
+            <span class="stack-ic"><svg viewBox="0 0 24 24"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M12 14l4.5-3.5"/><circle cx="12" cy="14" r="1.4"/></svg></span>
+            <div class="stack-tx"><b data-ko="운영 · 리스크 백오피스" data-en="Ops · risk back office">운영 · 리스크 백오피스</b><p data-ko="마켓·유저·수수료·리스크를 실시간으로 모니터링하고 관리합니다." data-en="Monitor and manage markets, users, fees and risk in real time.">마켓·유저·수수료·리스크를 실시간으로 모니터링하고 관리합니다.</p></div>
+            <span class="stack-tag" data-ko="운영" data-en="Operations">운영</span>
+          </div>
+          <div class="stack-layer" style="--d:2.5s;--sc:127,224,129"><span class="stack-shine"></span>
+            <span class="stack-idx">06</span>
+            <span class="stack-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v5c0 4.5-3 7.5-8 9-5-1.5-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <div class="stack-tx"><b data-ko="합법 구조 · 라이선스" data-en="Compliant structure · license">합법 구조 · 라이선스</b><p data-ko="법인설립과 라이선스 취득을 지원하여 합법적인 화이트사업으로 운영합니다." data-en="Entity setup and licensing support to run as a fully compliant, legitimate business.">법인설립과 라이선스 취득을 지원하여 합법적인 화이트사업으로 운영합니다.</p></div>
+            <span class="stack-tag" data-ko="컴플라이언스" data-en="Compliance">컴플라이언스</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container reveal">
+        <h2 data-ko="예측마켓, 지금 시작하세요" data-en="Launch your prediction market">예측마켓, 지금 시작하세요</h2>
+        <p data-ko="구상 중인 마켓과 시장을 알려주시면 맞춤 데모와 사업 구조를 제안합니다." data-en="Tell us your markets and target — we'll prepare a tailored demo and business model.">구상 중인 마켓과 시장을 알려주시면 맞춤 데모와 사업 구조를 제안합니다.</p>
+        <a href="contact.html" class="btn btn-primary" data-ko="상담 문의하기" data-en="Get in touch">상담 문의하기</a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/i18n.js?v=20260714a"></script>
+  <script src="js/layout.js?v=20260714a"></script>
+  <script src="js/main.js?v=20260714a"></script>
+</body>
+</html>
